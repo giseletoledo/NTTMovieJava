@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.exception.DataInicioPosteriorException;
+import org.example.exception.DataInvalidaException;
 import org.example.model.Filme;
 import org.example.util.Menu;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws DataInicioPosteriorException {
+    public static void main(String[] args) throws DataInvalidaException {
         Menu menu = new Menu();
         List<Filme> filmesCadastrados = new ArrayList<>();
 

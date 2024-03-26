@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.exception.DataInicioPosteriorException;
+import org.example.exception.DataInvalidaException;
 import org.example.model.Ator;
 import org.example.model.Diretor;
 import org.example.model.Filme;
@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CadastroFilmeService {
 
-    public static void cadastrarFilme(Menu menu, List<Filme> filmesCadastrados) throws DataInicioPosteriorException {
+    public static void cadastrarFilme(Menu menu, List<Filme> filmesCadastrados) throws DataInvalidaException {
         System.out.println("Cadastro de Filme");
 
         System.out.print("Nome do filme: ");
@@ -45,6 +45,10 @@ public class CadastroFilmeService {
 
         System.out.print("Data de fim (dd/mm/aaaa): ");
         LocalDate dataFim = menu.lerData();
+
+        if (dataInicio.isAfter(dataFim)) {
+            throw new DataInvalidaException("Data de início não pode ser posterior à data de término.");
+        }
 
         Filme filme = new Filme(nome, diretor, atores, infoFilmagem, enderecoGravacao, dataInicio, dataFim);
         filmesCadastrados.add(filme);
