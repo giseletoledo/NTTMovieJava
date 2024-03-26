@@ -21,7 +21,3 @@ Este projeto é uma aplicação Java para gerenciar filmes.
 <img width="50%" src="https://github.com/giseletoledo/NTTMovieJava/blob/main/cadastrofilmes1.png" alt="Terminal cadastrando filmes">
 <img width="50%" src="https://github.com/giseletoledo/NTTMovieJava/blob/main/cadastrofilmes2.png" alt="Terminal cadastrando filmes">
 </p>
-
-
-
-https://github.com/giseletoledo/NTTMovieJava/blob/main/cadastrofilmes2.png
