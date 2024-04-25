@@ -5,9 +5,9 @@ Este projeto é uma aplicação Java para gerenciar filmes.
 - Cadastro de filmes
 - Visualização de filmes cadastrados
 
-## Tecnologias Utilizadas
+##🛠 Tecnologias Utilizadas
 
-- Java
+- Java 17
 - Git
 - GitHub
 
